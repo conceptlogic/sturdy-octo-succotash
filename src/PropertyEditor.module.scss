@@ -1,0 +1,27 @@
+.propertyEditor {
+  label {
+    display: block;
+    font-size: 0.75rem;
+    margin-bottom: 0.5rem;
+  }
+}
+
+.row + .row {
+  margin-top: 1rem;
+}
+
+.links {
+  margin-top: 1rem;
+  text-align: right;
+
+  li {
+    display: inline;
+    list-style: none;
+    margin-left: 1rem;
+  }
+
+  button {
+    cursor: pointer;
+    font-size: 0.75rem;
+  }
+}

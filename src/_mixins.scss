@@ -1,0 +1,31 @@
+@mixin nonInteractive {
+  cursor: inherit;
+  pointer-events: none;
+}
+
+@mixin heading {
+  @include nonInteractive;
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+@mixin textInput {
+  @include nonInteractive;
+  background-color: #fff;
+  border: solid 1px gray;
+  border-radius: 0.25rem;
+  padding: 0.33rem;
+  width: 100%;
+}
+
+@mixin button {
+  @include nonInteractive;
+  background-color: #277da1;
+  border: 0;
+  border-radius: 0.5rem;
+  color: #fff;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  text-transform: uppercase;
+  width: 100%;
+}

@@ -1,0 +1,12 @@
+.grid {
+  border: dashed 1px gray;
+  border-radius: 0.5rem;
+  display: inline-block;
+  padding: 1rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  column-gap: 1rem;
+  display: inline-grid;
+  grid-template-columns: repeat(2, 250px [col-start]);
+  row-gap: 1rem;
+}

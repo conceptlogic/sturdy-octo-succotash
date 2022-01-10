@@ -1,0 +1,37 @@
+@import "./mixins";
+
+.elementTray {
+  li {
+    border: solid 1px gray;
+    background-color: #f8f9fa;
+    list-style: none;
+    margin-bottom: 0.3rem;
+    transition: all 0.5s;
+    width: 10rem;
+
+    &:hover {
+      background-color: #e9ecef;
+    }
+  }
+
+  h1 {
+    @include heading;
+  }
+
+  [type="text"] {
+    @include textInput;
+  }
+
+  button {
+    @include button;
+  }
+}
+
+.draggable {
+  cursor: grab;
+  color: #343a40;
+  background-color: transparent;
+  padding: 1rem;
+  position: relative; // prevent chrome from showing parent styles while dragging
+  z-index: 5;
+}
